@@ -7,7 +7,7 @@
 
 #### How to run:
 
-<pre>
+
 
  $ mvn clean dependency:copy-dependencies package
 
@@ -28,7 +28,7 @@
 
   pojo to JSON using jackson
   $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.Mapper
-</pre>
+ 
 
 
 #### Sample output  **with** <?xml-multiple?> xml annotation
