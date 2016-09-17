@@ -23,7 +23,7 @@
      ```xml
       <?xml-multiple?>
      ```  
-  xml annotation
+   annotation
 
   <pre> $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp2.xml  </pre>
 
