@@ -12,14 +12,16 @@
  $ mvn clean dependency:copy-dependencies package
 
   JSON output XML to JSON conversion  with :
-  ```xml <?xml-multiple?>
+  ```xml
+    <?xml-multiple?>
   ```
    annotation
 
   $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp.xml
 
   JSON output XML to JSON conversion  without :
-     ```xml <?xml-multiple?>
+     ```xml
+      <?xml-multiple?>
      ```  
   xml annotation
 
@@ -28,7 +30,7 @@
 
   pojo to JSON using jackson
   $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.Mapper
- 
+
 
 
 #### Sample output  **with** <?xml-multiple?> xml annotation
