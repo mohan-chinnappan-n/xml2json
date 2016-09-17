@@ -25,7 +25,8 @@
 #### Sample output  **with** <?xml-multiple?> xml annotation
 
 <pre>
-  [mchinnappanh:xmlparser] $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp.xml
+ $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* \
+      org.mohansun.dev.App emp.xml
 
 </pre>
 ```xml
@@ -52,7 +53,8 @@
 
 <pre>
 
-[mchinnappanh:xmlparser] $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp2.xml
+ $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* \
+          org.mohansun.dev.App emp2.xml
 </pre>
 
 ```xml
