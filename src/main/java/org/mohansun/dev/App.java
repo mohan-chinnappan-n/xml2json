@@ -23,6 +23,8 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.transform.TransformerFactoryConfigurationError;
 
+// StAXON - JSON via StAX:
+// https://github.com/beckchr/staxon
 import de.odysseus.staxon.json.JsonXMLConfig;
 import de.odysseus.staxon.json.JsonXMLConfigBuilder;
 import de.odysseus.staxon.json.JsonXMLOutputFactory;
@@ -151,18 +153,11 @@ public class App
         String fileName = args[0];
         if (fileName == null) fileName = "emp.xml";
 
-
-
         InputStream inputStream = new FileInputStream(new File(fileName));
         String xml = IOUtils.toString(inputStream);
 
         System.out.println( xml + " ==>\n "  +  app.convertToJson(xml) + "\n===========================\n" );
 
-      /*
-        Gson gson = new GsonBuilder().create();
-        gson.toJson("Hello", System.out);
-        gson.toJson(123, System.out);
-      */
 
 
     }
