@@ -11,11 +11,17 @@
 
  $ mvn clean dependency:copy-dependencies package
 
-  JSON output XML to JSON conversion  with : ```xml <?xml-multiple?>```  xml annotation
+  JSON output XML to JSON conversion  with :
+  ```xml <?xml-multiple?>
+  ```
+   annotation
 
   $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp.xml
 
-  JSON output XML to JSON conversion  without : ```xml <?xml-multiple?>```  xml annotation
+  JSON output XML to JSON conversion  without :
+     ```xml <?xml-multiple?>
+     ```  
+  xml annotation
 
   $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp2.xml
 
