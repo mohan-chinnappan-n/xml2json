@@ -1,2 +1,4 @@
 org/mohansun/dev/App.class
 org/mohansun/dev/Staff.class
+org/mohansun/dev/University.class
+org/mohansun/dev/Mapper.class
