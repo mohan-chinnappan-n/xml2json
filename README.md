@@ -19,7 +19,7 @@
   $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.Mapper
 
 
-##### Sample output  **with** <?xml-multiple?> xml annotation
+#### Sample output  **with** <?xml-multiple?> xml annotation
   [mchinnappanh:xmlparser] $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp.xml
   <team>
     <?xml-multiple?>
@@ -35,10 +35,9 @@
   		} ]
   	}
   }
-===========================
 
 
-##### Sample output  **without** <?xml-multiple?> xml annotation
+#### Sample output  **without** <?xml-multiple?> xml annotation
 
 [mchinnappanh:xmlparser] $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp2.xml
 <team>
