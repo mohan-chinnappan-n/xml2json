@@ -1,6 +1,9 @@
 #xml2json
 
-### Project explains how to handle/perserve single array elements in XML using StAXON - JSON via StAX
+### Project explains how to handle/perserve single array elements in XML-JSON conversion using StAXON - JSON via StAX
+
+#### JSON output XML to JSON conversion via staxon - using : ```xml <?xml-multiple?>```  xml annotation
+
 
 #### How to run:
 
@@ -8,11 +11,11 @@
 
  $ mvn clean dependency:copy-dependencies package
 
-  JSON output xml to JSON via staxon - explains about <?xml-multiple?> xml annotation
+  JSON output XML to JSON conversion  with : ```xml <?xml-multiple?>```  xml annotation
 
   $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp.xml
 
-  JSON output with  <?xml-multiple?> xml annotation
+  JSON output XML to JSON conversion  without : ```xml <?xml-multiple?>```  xml annotation
 
   $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp2.xml
 
