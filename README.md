@@ -17,7 +17,7 @@
   ```
    annotation
 
-  $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp.xml
+  <pre> $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp.xml </pre>
 
   JSON output XML to JSON conversion  without :
      ```xml
@@ -25,12 +25,12 @@
      ```  
   xml annotation
 
-  $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp2.xml
+  <pre> $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp2.xml  </pre>
 
-
+ <pre>
   pojo to JSON using jackson
   $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.Mapper
-
+ </pre>
 
 
 #### Sample output  **with** <?xml-multiple?> xml annotation
