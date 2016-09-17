@@ -1,8 +1,11 @@
- vi src/main/java/org/mohansun/dev/App.java
- mvn compile
- mvn package
+# vi src/main/java/org/mohansun/dev/App.java
+# mvn compile
+# mvn package
 
- mvn clean dependency:copy-dependencies package
- java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App
+mvn clean dependency:copy-dependencies package
+#xml to JSON
+java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App
+#pojo to JSON
+java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.Mapper
 
   mvn dependency:tree

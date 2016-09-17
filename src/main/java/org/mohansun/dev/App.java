@@ -9,6 +9,13 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.commons.io.IOUtils;
+
+
+
 import javax.xml.stream.FactoryConfigurationError;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLEventWriter;
@@ -104,7 +111,7 @@ public class App
   return ret;
  }
 
-    public static void main( String[] args ) throws Exception {
+    public static void test( String[] args ) throws Exception {
         App app = new App();
         String xmlstr2 = String.join("\n"
                  , "<team>"
@@ -133,6 +140,29 @@ public class App
         Gson gson = new GsonBuilder().create();
         gson.toJson("Hello", System.out);
         gson.toJson(123, System.out);
+
+
+    }
+
+
+
+    public static void main( String[] args ) throws Exception {
+        App app = new App();
+        String fileName = args[0];
+        if (fileName == null) fileName = "emp.xml";
+
+
+
+        InputStream inputStream = new FileInputStream(new File(fileName));
+        String xml = IOUtils.toString(inputStream);
+
+        System.out.println( xml + " ==>\n "  +  app.convertToJson(xml) + "\n===========================\n" );
+
+      /*
+        Gson gson = new GsonBuilder().create();
+        gson.toJson("Hello", System.out);
+        gson.toJson(123, System.out);
+      */
 
 
     }

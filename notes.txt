@@ -1,0 +1,46 @@
+c#
+
+http://www.newtonsoft.com/json/help/html/ConvertXmlToJsonForceArray.htm
+
+
+
+http://scripting.com/stories/2010/12/18/questionForJsonGurus.html
+
+
+
+=====
+
+[mchinnappanh:xmlparser] $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp.xml
+<team>
+  <?xml-multiple?>
+  <employee>
+    <name>Scott</name>
+  </employee>
+</team>
+ ==>
+ {
+	"team" : {
+		"employee" : [ {
+			"name" : "Scott"
+		} ]
+	}
+}
+===========================
+
+[mchinnappanh:xmlparser] $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp2.xml
+<team>
+  <employee>
+    <name>Scott</name>
+  </employee>
+</team>
+ ==>
+ {
+	"team" : {
+		"employee" : {
+			"name" : "Scott"
+		}
+	}
+}
+
+
+=======
