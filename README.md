@@ -26,12 +26,18 @@
 
 <pre>
   [mchinnappanh:xmlparser] $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp.xml
+
+</pre>
+```xml
   <team>
     <?xml-multiple?>
     <employee>
       <name>Scott</name>
     </employee>
   </team>
+```
+
+<pre>
    ==>
    {
   	"team" : {
@@ -42,16 +48,22 @@
   }
 
 </pre>
+
 #### Sample output  **without** <?xml-multiple?> xml annotation
 
 <pre>
 
 [mchinnappanh:xmlparser] $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp2.xml
+</pre>
+```xml
 <team>
   <employee>
     <name>Scott</name>
   </employee>
 </team>
+```
+
+<pre>
  ==>
  {
 	"team" : {
