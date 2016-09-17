@@ -37,8 +37,8 @@
   </team>
 ```
 
-<pre>
    ==>
+```json
    {
   	"team" : {
   		"employee" : [ {
@@ -46,8 +46,7 @@
   		} ]
   	}
   }
-
-</pre>
+```
 
 #### Sample output  **without** <?xml-multiple?> xml annotation
 
@@ -55,6 +54,7 @@
 
 [mchinnappanh:xmlparser] $ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.App emp2.xml
 </pre>
+
 ```xml
 <team>
   <employee>
@@ -63,8 +63,9 @@
 </team>
 ```
 
-<pre>
  ==>
+
+ ```json
  {
 	"team" : {
 		"employee" : {
@@ -72,5 +73,4 @@
 		}
 	}
 }
-
-</pre>
+```
