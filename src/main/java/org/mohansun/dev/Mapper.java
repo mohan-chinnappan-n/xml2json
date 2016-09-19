@@ -14,7 +14,7 @@ public class Mapper {
   public static void main( String[] args ) throws Exception {
 
     University uni = new University();
-    uni.setName("Madras");
+    uni.setName("Massachusetts Institute of Technology");
     uni.setNoOfDepartments(3);
 
     ArrayList<String> depts = new ArrayList<String>(3);
@@ -31,11 +31,14 @@ public class Mapper {
 
 
     University uni2 = new University();
-    uni.setName("Madras");
-    uni.setNoOfDepartments(3);
+    uni2.setName("University of Madras");
+    uni2.setNoOfDepartments(3);
 
-    ArrayList<String> depts2 = new ArrayList<String>(1);
+    ArrayList<String> depts2 = new ArrayList<String>(2);
     depts2.add("Math");
+    depts2.add("Engineering");
+    depts2.add("Arts");
+
     uni2.setDepartments(depts2);
 
     uniJSON= mapper.writeValueAsString(uni2);
