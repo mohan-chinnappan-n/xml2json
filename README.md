@@ -87,3 +87,15 @@
 	}
 }
 ```
+
+
+## JSONPath
+
+<pre>
+
+java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.JSONPathApp store.json '$.store.book[*].author'
+
+
+["Nigel Rees","Evelyn Waugh","Herman Melville","J. R. R. Tolkien"]
+
+</pre>

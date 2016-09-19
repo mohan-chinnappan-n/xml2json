@@ -11,4 +11,7 @@ java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.
 #pojo to JSON
 java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.Mapper
 
+# JSONPath
+java -cp target/xmlparser-1.0-SNAPSHOT.jar:target/dependency/* org.mohansun.dev.JSONPathApp store.json '$.store.book[*].author'
+
 mvn dependency:tree
